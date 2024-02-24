@@ -27,7 +27,7 @@ border: none
     gap: 1rem;
     padding: 2rem;
     transition: 0.25s ease;
-    background-color: var(--background-blue)
+    background-color: rgb(234, 235, 255);
 }
 
 .visi-straipsniai-straipsnis-tekstas:hover {
