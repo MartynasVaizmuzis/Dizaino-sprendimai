@@ -6,7 +6,7 @@ main h1{
 
 .visi-straipsniai-straipsnis{
     width: 100%;
-    border: 1px solid var(--dark-blue);
+    border: 1px solid #2C3590;
     max-width: 800px;
     display: flex;
     flex-direction: row;
