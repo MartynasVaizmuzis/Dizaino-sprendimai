@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dažniausi Wordpress “errorai”</title>
+    <title>Visi Straipsniai</title>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" type="image/x-icon" href="images/Design-solutions-logo-filed (1).png">
+    <link rel="stylesheet" href="styles/visi-straispniai.css">
+    <link rel="icon" type="image/x-icon" href="images/Dizaino-sprendimai-favicon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,76 +26,44 @@
                 <h4>Dizaino sprendimai</h4>
             </div>
             <div class="menu">
-                <a class="header-text" href="visi-straipsniai.html">Visi straipsniai</a>
+                <a class="header-text" href="">Visi straipsniai</a>
                 <a href="https://vaizmuzis.lt"><button  class="header-button">Susisiekite su profesionalu →</button></a>
             </div>
         </div>
     </header>
     
     <main>
-        <div class="hero-section">
-            <h1>Dažniausi Wordpress “errorai” (ir kaip juos pataisyti)</h1>
+        <h1>VISI STRAIPSNIAI</h1>
 
-            <img class="hero-image" src="images/wordpress-errors.jpg" alt="Straipsnio nuotrauka">
-           
-            <p>Niekas nenori pamatyti “error” žinutės dirbant ant savo svetainės. Laimei, „WordPress“ paprastai yra gerai sutepta mašina, kuri pateisina savo reputaciją ir greičiausiai nepadarys klaidų be priežasties. Deja, dėl to gali būti dar labiau varginti, kai atsiranda problema, ypač jei nežinote, kaip ją išspręsti.</p>
-            <p>Daugelis klaidų iš pirmo žvilgsnio gąsdina, ypač pradedantiesiems WordPress. Laimei, dauguma klaidų kyla dėl nedidelių problemų, kurias lengva išspręsti, o kai suprasite problemos šaltinį, tereikia atlikti pagrindinius trikčių šalinimo veiksmus, kad svetainė vėl pradėtų veikti.</p>
-            <p>Taigi, įsigilinkime į tai! Šiame straipsnyje bus parodyta, kaip diagnozuoti dažniausiai pasitaikančias WordPress errorus, tačiau tuo nesibaikime! Taip pat žingsnis po žingsnio paaiškinsime, kaip ištaisyti WordPress errorus, kad jūsų svetainė būtų normali. Ir atminkite, kad jei nematote čia nurodytos klaidos, visada galite pereiti į oficialų WordPress dažniausiai pasitaikančių problemų sąrašą ir rasti daugiau pagalbos.</p>
-        </div>    
-
-        <div class="content">
-            <div class="heading-photo-text-container">
-                <h2>1.  &MediumSpace;”Šioje svetainėje kyla techninių sunkumų”</h2>
-                <div class="example-image-container"><img class="example-image" src="images/This-Site-Is-Experiencing-Technical-Difficulties.jpg" alt=""></div>
-                <p>„WordPress“ 5.2 versijoje pristatė lemtingų klaidų apsaugos funkcijas. Jei svetainėje įvyksta lemtinga klaida, gausite paprastą pranešimą: „Ši svetainė turi techninių sunkumų“.</p>
-                <p>Laimei, „WordPress“ taip pat turi įmontuotų funkcijų, leidžiančių ištaisyti šias klaidas. Administratoriaus el. pašto adresu gausite visą ataskaitą su klaidos priežastimi kartu su nuoroda į jūsų svetainės vidinį duomenų bazės serverį, kur galėsite ją ištaisyti.</p>
-            </div>
-            <div class="heading-photo-text-container">
-                <h2>2. Analizavimo klaida / sintaksės klaida</h2>
-                <p>Štai dar vienas paprastas variantas – nors daugelis klaidų, apie kurias sužinosime, gali erzinti, nes jos jums suteikia mažai informacijos, „analizavimo klaida“ (arba „sintaksės klaida“), tam tikra PHP klaidos rūšis, yra bent jau. pakankamai naudinga, kad tiksliai pasakytų, kas negerai.</p>
-                <div class="example-image-container"><img class="example-image" src="images/Parse-Error-Syntax-Error.jpg" alt=""></div>
-                <p>Ši klaida įvyksta, kai kyla problemų dėl svetainės kodo, paprastai kai pridedate kodo fragmentą su neteisinga sintaksė (dažniausiai faile functions.php). Užuot įkėlus puslapį, pasirodo paprastas pranešimas, paaiškinantis, kas problema ir kur ji įvyko.</p>
-                <p>Norėdami išspręsti problemą, turėsite pasiekti nurodytą failą naudodami SFTP. Mūsų pavyzdyje naudosime „FileZilla“, nes tai nemokamas atvirojo kodo įrankis. Tiesiog naudokite žiniatinklio prieglobos pateiktus SFTP kredencialus, kad pasiektumėte savo svetainės pagrindinę programą.</p>
-                <p>Tada turite rasti atitinkamą failą. Aukščiau pateiktame pavyzdyje matote, kad problema yra dabartinės svetainės temos functions.php faile. Taigi, mes pasieksime tą temos aplanką, dešiniuoju pelės mygtuku spustelėkite functions.php ir pasirinkite Peržiūrėti / redaguoti.</p>
-                <div class="example-image-container"><img class="example-image" src="images/Parse-Error-FInd-the-file.jpg" alt=""></div>
-                <p>Jei patikrinsite klaidos pranešimą apie analizę, pamatysite, kad jis netgi nurodo tikslią kodo eilutę, kurioje yra problema. Dabar mums tereikia rasti tą eilutę ir išspręsti problemą. Mūsų pavyzdyje tai paprastas skliausto nebuvimo atvejis, todėl sutvarkykime tai.</p>
-                <div class="example-image-container"><img class="example-image" src="images/Parse-Error-code.jpg" alt=""></div>
-                <p>Išsaugokite failą, jei bus klausiama ar norite keisti egzistuojanti failą jūsų serveryje, spauskite “Taip”.</p>
-            </div>
-            <div class="heading-photo-text-container">
-                <h2>3. Viršytas maksimalus vykdymo laikas</h2>
-                <div class="example-image-container"><img class="example-image" src="images/Maximum-Execution-Time-Exceeded.jpg" alt=""></div>
-                <p>Viena iš dažniausiai pasitaikančių PHP klaidų, su kuriomis galite susidurti, yra susijusi su nustatytais laiko apribojimais, per kiek laiko gali veikti PHP scenarijus. Šiuos terminus nustato „WordPress“ hostingo paslaugų teikėjai ir jie gali skirtis – kai kurie teikėjai nustato jas didesnes reikšmes, o kiti – mažesnes. Kai svetainė apdoroja duomenis, jei jos nepavyks užbaigti per maksimalų laikotarpį, pasibaigs jos skirtasis laikas ir bus rodoma ši klaida: „Mirtina klaida: viršytas maksimalus vykdymo laikas“.
-                Yra du būdai išspręsti šią problemą.
-                </p>
-                <p>Pirmasis būdas yra rasti scenarijų, kuris veikia per ilgai, ir jį pašalinti. Tikėtina, kad tai yra papildinio ar temos dalis, todėl norint pradėti yra tinkamų priedų išjungimas ir grįžimas prie numatytosios temos.</p>
-                <p>Paprastesnis būdas yra padidinti maksimalų laiko limitą. Norėdami tai padaryti, į savo php.ini failą pridėkite šį kodą: Max_execution_time = 300
-                </p>
-                <p>Taip pat galite susisiekti su hostingo paslaugų teikėju ir pasiteirauti, koks jų didžiausias dydis ir ar jis gali jį padidinti už jus.</p>
+        <div class="visi-straipsniai-straipsnis">
+            <img class="visi-straipsniai-image" src="visi-str-images/wordpress-errors.jpg" alt="">
+            <div class="visi-straipsniai-straipsnis-tekstas">
+                <h3>Dažniausi Wordpress “errorai” (ir kaip juos pataisyti)</h3>
+                <p>Žinomiausios klaidos kurias galite sutikti dirbdami ant savo svetainės, sužinokite kaip jas išspręsti!</p>
+                <a href="index.html"><button class="nuoroda-svetaine">Skaityti daugiau</button></a>
             </div>
         </div>
-        <div class="heading-photo-text-container">
-            <h2>4. Baltas mirties ekranas (White Screen of Death - WSoD)</h2>
-            <div class="example-image-container"><img class="example-image" src="images/White-Screen-Of-Death.jpg" alt=""></div>
-            <p>Viena iš žymiausių ir paslaptingiausių klaidų yra baisusis „WordPress White Screen of Death“ (WSoD). Ši klaida pakeičia visą svetainę tuščiu, baltu niekuom. Negausite jokių klaidų pranešimų ar papildomos pagalbos.
-            </p>
-            <p>Ši problema gali kilti dėl daugelio skirtingų priežasčių, tačiau dažniausiai tai reiškia, kad svetainės nepavyko tinkamai įkelti. Kadangi informacijos nėra daug, yra keletas trikčių šalinimo būdų.</p>
-            <p>•    Išjunkite įskiepius. Labiausiai tikėtinas WSoD kaltininkas yra sugedęs įskiepis, todėl pabandykite juos visus išjungti ir pažiūrėkite, ar tai išsprendžia problemą.
-            </p>
-            <p>•	Išjungti temą. Jūsų „WordPress“ tema taip pat gali sukelti šią problemą, todėl naudokite SFTP, kad pakeistumėte ją viena iš numatytųjų „WordPress“ temų.</p>
-            <p>•	Suaktyvinkite „WordPress“ debugginimo režimą. Tai naudinga funkcija, leidžianti matyti klaidas tiesiai kiekviename puslapyje, kuri gali padėti tiksliai nustatyti pagrindinę WSoD priežastį.</p>
-            <p>•	Išvalykite talpyklą. Dėl svetainės talpyklos sprendimo galite matyti pasenusius failus, net jei WSoD buvo ištaisytas. Todėl norėsite išvalyti talpyklą ir pamatyti, ar tai išsprendžia problemą.</p>
-            <p>•	Padidinkite atminties limitą. Gali būti, kad jūsų svetainėje pritrūko atminties. Galite padidinti didžiausią limitą redaguodami php.ini failą.</p>
-            <p>Šie metodai daugeliu atvejų ištaisys WSoD. Tačiau jei vis tiek kyla problemų, dėl daugiau pagalbos turėtumėte susisiekti su hostingo paslaugų teikėjo palaikymo komanda.</p>
-        </div>
-    </div>
 
-</div>
-
-        <div class="kitas-straipsnis">
-            <h3>Kitas mūsų straipsnis</h3>
-            <a href="straipsnis2.html"class="kitas-straipsnis-image-container"><div class="overlay"></div><img class="kitas-straipsnis-image" src="images/5-web-dizaino-tendencijos.png" alt=""></a>
+        
+        <div class="visi-straipsniai-straipsnis">
+            <img class="visi-straipsniai-image" src="visi-str-images/AI-in-design..webp" alt="">
+            <div class="visi-straipsniai-straipsnis-tekstas">
+                <h3>5 WEB DIZAINO TENDENCIJOS 2024 METAIS</h3>
+                <p>Sužinokite viską apie naujas dizaino madas internetinėje sferoje, žinokite kas laukia 2024 metais!</p>
+                <a href="straipsnis2.html"><button class="nuoroda-svetaine">Skaityti daugiau</button></a>
+            </div>
         </div>
+
+        <div class="visi-straipsniai-straipsnis">
+            <img class="visi-straipsniai-image" src="visi-str-images/Website-creation.png" alt="">
+            <div class="visi-straipsniai-straipsnis-tekstas">
+                <h3>Kaip sukurti internetinę svetainę!</h3>
+                <p>Sužinokite kaip savarankiškai suukurti svetainę, greitai ir efektyviai</p>
+                <a href="straipsnis3.html"><button class="nuoroda-svetaine">Skaityti daugiau</button></a>
+            </div>
+        </div>
+
+
 
 
 
